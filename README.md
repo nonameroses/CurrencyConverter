@@ -2,10 +2,10 @@
 
 Simple Currency exchange program using GSON libraries and Exchange Rate API 
 
-  *Takes input from what currency to convert
-  *Takes input to what currency to convert
-  *Shows corresponding value of two currencies
-  *Takes amount input on how much convert to
+  * Takes input from what currency to convert
+  * Takes input to what currency to convert
+  * Shows corresponding value of two currencies
+  * Takes amount input on how much convert to
 
 
 
