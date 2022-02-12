@@ -12,6 +12,7 @@ import java.util.*;
 public class CurrencyConverter {
 
 
+    @SuppressWarnings("InfiniteLoopStatement")
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         // Exchange Rate API, the last word after / must be a base currency to convert from
@@ -40,7 +41,7 @@ public class CurrencyConverter {
                 // Checking if there is corresponding key to the input
                 if (Objects.equals(entries.getKey(), currency.toUpperCase(Locale.ROOT))) {
                     // Showing translation value
-                    System.out.println("Translation Ratio from " + CurrencyConverter::currencyFrom() + entries.getValue() + " " + entries.getKey());
+                    System.out.println("Translation Ratio from " + entries.getValue() + " " + entries.getKey());
                     // Getting value as a double
                     double value = entries.getValue().getAsDouble();
                     System.out.println("Enter the amount you want to convert");
@@ -50,8 +51,10 @@ public class CurrencyConverter {
                     System.out.println(value * amount + " " + entries.getKey());
                     break;
                 }
+
             }
-            System.out.println("Wrong input, please try again");
+
+
         }
     }
 
