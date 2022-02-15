@@ -1,6 +1,6 @@
 # CurrencyConverter 
 
-Simple Currency exchange program using GSON library and Exchange Rate API 
+Simple Currency exchange program using Json (GSON) library and Exchange Rate API 
 
   * Takes input from what currency to convert
   * Takes input to what currency to convert
